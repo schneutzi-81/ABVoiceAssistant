@@ -3,7 +3,7 @@
 This demo was created to demonstrate the 
 - capabilities of azure communication services 
 - BotframeWork Composer with
-- BotframeWork Telefony Channel installed.
+- BotframeWork Telephony Channel installed.
 
 # Prerequisites: 
 - a Azure subscription with a billing adress in US or configured direct routing to get a telefonnumber 
@@ -22,5 +22,6 @@ This demo was created to demonstrate the
 - basic QnA
 
 # setup Azure Communication Services
-[setup ACS for Azure Bot](https://docs.microsoft.com/en-us/azure/communication-services/quickstarts/telephony-sms/get-phone-number?pivots=platform-azp)
+- [setup ACS for Azure Bot](https://docs.microsoft.com/en-us/azure/communication-services/quickstarts/telephony-sms/get-phone-number?pivots=platform-azp)
+- [Setup and use telephony channel](https://github.com/microsoft/botframework-telephony/blob/main/README.md)
 
