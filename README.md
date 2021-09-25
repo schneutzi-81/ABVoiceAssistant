@@ -14,3 +14,13 @@ This demo was created to demonstrate the
 - clone this repository to your botframework composer and create all needed ressources on azure with botframework composers wizard.
 - build, deploy, enjoy
 
+# Functionality
+- voice only assistant
+- ability to transfer a call to a hardcoded phonenumber (trigger - "i want to speak to a human)
+- detect DTMF (as an example - trigger "please identify me")
+- basic help
+- basic QnA
+
+# setup Azure Communication Services
+[setup ACS for Azure Bot](https://docs.microsoft.com/en-us/azure/communication-services/quickstarts/telephony-sms/get-phone-number?pivots=platform-azp)
+
