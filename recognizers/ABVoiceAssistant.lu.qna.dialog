@@ -1,0 +1,7 @@
+{
+  "$kind": "Microsoft.CrossTrainedRecognizerSet",
+  "recognizers": [
+    "ABVoiceAssistant.lu",
+    "ABVoiceAssistant.qna"
+  ]
+}

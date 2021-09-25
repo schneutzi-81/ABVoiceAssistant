@@ -1,0 +1,10 @@
+{
+  "ABVoiceAssistant.en-us": {
+    "rootDialog": true,
+    "triggers": {
+      "help": "",
+      "transfer": "",
+      "identify": ""
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "QnA_ABVoiceAssistant",
+  "recognizers": {
+    "en-us": "ABVoiceAssistant.en-us.qna",
+    "": "ABVoiceAssistant.en-us.qna"
+  }
+}

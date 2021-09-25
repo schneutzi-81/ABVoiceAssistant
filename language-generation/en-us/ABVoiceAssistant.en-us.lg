@@ -1,0 +1,53 @@
+[import](common.lg)
+
+# SendActivity_Greeting()
+[Activity
+    Text = ${SendActivity_Greeting_text()}
+]
+
+# SendActivity_Greeting_text()
+- Welcome to your Assistant Builder bot, I was created to demonstrate the voice capabilities of azure communication service. You can ask me as you would ask a human being or as a transfer to a human with please transfer me to a person. 
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = ${SendActivity_DidNotUnderstand_text()}
+]
+
+# SendActivity_DidNotUnderstand_text()
+- Sorry, I didn't get that.
+# TextInput_Prompt_KQx2vR()
+[Activity
+    Text = ${expandText(@answer)}
+    SuggestedActions = ${foreach(turn.recognized.answers[0].context.prompts, x, x.displayText)}
+]
+
+# SendActivity_OlzX99()
+- ${expandText(@answer)}
+
+# SendActivity_ll8hl7()
+[Activity
+    Text = ${SendActivity_ll8hl7_text()}
+]
+
+# SendActivity_ll8hl7_text()
+- You can ask me as you would ask a human being or as a transfer to a human with please transfer me to a person
+# SendActivity_JspQBF()
+[Activity
+    Text = ${SendActivity_JspQBF_text()}
+]
+
+# SendActivity_JspQBF_text()
+- please hold the line, your call will be transfered to a human.
+# TelephonyBatchTerminationCharacterInput_Prompt_Uvn71s()
+[Activity
+    Text = ${TelephonyBatchTerminationCharacterInput_Prompt_Uvn71s_text()}
+]
+
+# TelephonyBatchTerminationCharacterInput_Prompt_Uvn71s_text()
+- please enter your phonenumber in international format, starting with 00 and ending with a # sign
+# SendActivity_39wg8D()
+[Activity
+    Text = ${SendActivity_39wg8D_text()}
+]
+
+# SendActivity_39wg8D_text()
+- you typed ${conversation.batchresult}
