@@ -17,7 +17,7 @@ This demo was created to demonstrate the
 # Functionality
 - voice only assistant
 - ability to transfer a call to a hardcoded phonenumber (trigger - "i want to speak to a human)
-- detect DTMF (as an example - trigger "please identify me")
+- detect DTMF (as an example - trigger "identification please")
 - basic help
 - basic QnA
 
