@@ -3,6 +3,7 @@
 # SendActivity_Greeting()
 [Activity
     Text = ${SendActivity_Greeting_text()}
+    Speak = ${SendActivity_Greeting_speak()}
 ]
 
 # SendActivity_Greeting_text()
@@ -10,6 +11,7 @@
 # SendActivity_DidNotUnderstand()
 [Activity
     Text = ${SendActivity_DidNotUnderstand_text()}
+    Speak = ${SendActivity_DidNotUnderstand_speak()}
 ]
 
 # SendActivity_DidNotUnderstand_text()
@@ -26,6 +28,7 @@
 # SendActivity_ll8hl7()
 [Activity
     Text = ${SendActivity_ll8hl7_text()}
+    Speak = ${SendActivity_ll8hl7_speak()}
 ]
 
 # SendActivity_ll8hl7_text()
@@ -33,6 +36,7 @@
 # SendActivity_JspQBF()
 [Activity
     Text = ${SendActivity_JspQBF_text()}
+    Speak = ${SendActivity_JspQBF_speak()}
 ]
 
 # SendActivity_JspQBF_text()
@@ -40,6 +44,7 @@
 # TelephonyBatchTerminationCharacterInput_Prompt_Uvn71s()
 [Activity
     Text = ${TelephonyBatchTerminationCharacterInput_Prompt_Uvn71s_text()}
+    Speak = ${TelephonyBatchTerminationCharacterInput_Prompt_Uvn71s_speak()}
 ]
 
 # TelephonyBatchTerminationCharacterInput_Prompt_Uvn71s_text()
@@ -47,7 +52,20 @@
 # SendActivity_39wg8D()
 [Activity
     Text = ${SendActivity_39wg8D_text()}
+    Speak = ${SendActivity_39wg8D_speak()}
 ]
 
 # SendActivity_39wg8D_text()
 - you typed ${conversation.batchresult}
+# TelephonyBatchTerminationCharacterInput_Prompt_Uvn71s_speak()
+- please enter your phonenumber in international format, starting with 00 and ending with a # sign
+# SendActivity_39wg8D_speak()
+- you typed ${conversation.batchresult}
+# SendActivity_JspQBF_speak()
+- please hold the line, your call will be transfered to a human.
+# SendActivity_ll8hl7_speak()
+- You can ask me as you would ask a human being or as a transfer to a human with please transfer me to a person
+# SendActivity_DidNotUnderstand_speak()
+- Sorry, I didn't get that.
+# SendActivity_Greeting_speak()
+- Welcome to your Assistant Builder bot, I was created to demonstrate the voice capabilities of azure communication service. You can ask me as you would ask a human being or as a transfer to a human with transfer me to a person.
