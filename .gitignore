@@ -1,6 +1,6 @@
 # files generated during the lubuild process
 generated/
-settings/*
+settings/
 bin/
 code.zip
 obj/
