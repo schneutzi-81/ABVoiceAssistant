@@ -1,7 +1,6 @@
 # files generated during the lubuild process
 generated/
-settings/appsettings.json
-settings/cross-train.config.json
+settings/*
 bin/
 code.zip
 obj/
