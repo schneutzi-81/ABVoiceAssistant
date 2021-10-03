@@ -7,8 +7,10 @@ This demo was created to demonstrate the
 
 # Prerequisites: 
 - a Azure subscription with a billing adress in US or configured direct routing to get a telefonnumber 
-- a installed and running Botframework Composer Client
-
+- a installed and running Botframework Composer Client with the following packages:
+    - Bot.Builder.Community.Components.Dialogs.Input
+    - Microsoft.Bot.Builder.Adapters.Twilio
+    - Microsoft.Bot.Components.Telephony
 
 # HowTo
 - clone this repository to your botframework composer and create all needed ressources on azure with botframework composers wizard.
