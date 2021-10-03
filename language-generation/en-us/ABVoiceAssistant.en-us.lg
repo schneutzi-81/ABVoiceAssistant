@@ -6,7 +6,7 @@
 ]
 
 # SendActivity_Greeting_text()
-- Welcome to your Assistant Builder bot, I was created to demonstrate the voice capabilities of azure communication service. You can ask me as you would ask a human being or as a transfer to a human with please transfer me to a person. 
+- Welcome to your Assistant Builder bot, I was created to demonstrate the voice capabilities of azure communication service. You can ask me as you would ask a human being or as a transfer to a human with transfer me to a person.
 # SendActivity_DidNotUnderstand()
 [Activity
     Text = ${SendActivity_DidNotUnderstand_text()}

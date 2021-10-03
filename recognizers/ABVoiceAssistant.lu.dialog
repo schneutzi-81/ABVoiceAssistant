@@ -1,6 +1,6 @@
 {
   "$kind": "Microsoft.MultiLanguageRecognizer",
-  "id": "LUIS_ABVoiceAssistant",
+  "id": "ORCHESTRATOR_ABVoiceAssistant",
   "recognizers": {
     "en-us": "ABVoiceAssistant.en-us.lu",
     "": "ABVoiceAssistant.en-us.lu"
