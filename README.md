@@ -28,5 +28,6 @@ This demo was created to demonstrate the
 # setup Azure Communication Services
 - [setup ACS for Azure Bot](https://docs.microsoft.com/en-us/azure/communication-services/quickstarts/telephony-sms/get-phone-number?pivots=platform-azp)
 - [Setup and use telephony channel](https://github.com/microsoft/botframework-telephony/blob/main/README.md)
+- [Setup direct routing infrastucture](https://docs.microsoft.com/en-us/azure/communication-services/concepts/telephony-sms/direct-routing-infrastructure)
 
 
