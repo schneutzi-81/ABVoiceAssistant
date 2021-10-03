@@ -1,2 +1,7 @@
 # files generated during the lubuild process
 generated/
+bin/
+code.zip
+obj/
+*.log
+settings/

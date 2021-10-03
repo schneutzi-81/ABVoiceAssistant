@@ -1,5 +1,183 @@
 {
   "$schema": "https://schemas.botframework.com/schemas/ui/v1.0/ui.schema",
+  "BotBuilderCommunity.EmailInput": {
+    "flow": {
+      "body": "=action.prompt",
+      "botAsks": {
+        "body": {
+          "defaultContent": "<prompt>",
+          "field": "prompt",
+          "widget": "LgWidget"
+        },
+        "header": {
+          "colors": {
+            "icon": "#5C2E91",
+            "theme": "#BBEAF4"
+          },
+          "icon": "MessageBot",
+          "widget": "ActionHeader"
+        },
+        "widget": "ActionCard"
+      },
+      "nowrap": true,
+      "userInput": {
+        "header": {
+          "colors": {
+            "icon": "#0078D4",
+            "theme": "#E5F0FF"
+          },
+          "disableSDKTitle": true,
+          "icon": "User",
+          "menu": "none",
+          "widget": "ActionHeader"
+        },
+        "widget": "ActionCard"
+      },
+      "widget": "PromptWidget"
+    },
+    "form": {
+      "helpLink": "https://aka.ms/bfc-understanding-dialogs",
+      "label": "Prompt for a Email",
+      "order": [
+        "resultProperty",
+        "defaultLocale",
+        "*"
+      ],
+      "properties": {
+        "property": {
+          "intellisenseScopes": [
+            "variable-scopes"
+          ]
+        }
+      },
+      "subtitle": "Email Input(Bot Builder Community)"
+    },
+    "menu": {
+      "label": "Email",
+      "submenu": [
+        "Ask a question"
+      ]
+    }
+  },
+  "BotBuilderCommunity.PhoneNumberInput": {
+    "flow": {
+      "body": "=action.prompt",
+      "botAsks": {
+        "body": {
+          "defaultContent": "<prompt>",
+          "field": "prompt",
+          "widget": "LgWidget"
+        },
+        "header": {
+          "colors": {
+            "icon": "#5C2E91",
+            "theme": "#BBEAF4"
+          },
+          "icon": "MessageBot",
+          "widget": "ActionHeader"
+        },
+        "widget": "ActionCard"
+      },
+      "nowrap": true,
+      "userInput": {
+        "header": {
+          "colors": {
+            "icon": "#0078D4",
+            "theme": "#E5F0FF"
+          },
+          "disableSDKTitle": true,
+          "icon": "User",
+          "menu": "none",
+          "widget": "ActionHeader"
+        },
+        "widget": "ActionCard"
+      },
+      "widget": "PromptWidget"
+    },
+    "form": {
+      "helpLink": "https://aka.ms/bfc-understanding-dialogs",
+      "label": "Prompt for Phone number",
+      "order": [
+        "resultProperty",
+        "defaultLocale",
+        "*"
+      ],
+      "properties": {
+        "resultProperty": {
+          "intellisenseScopes": [
+            "variable-scopes"
+          ]
+        }
+      },
+      "subtitle": "Phone number Input(Bot Builder Community)"
+    },
+    "menu": {
+      "label": "Phone Number",
+      "submenu": [
+        "Ask a question"
+      ]
+    }
+  },
+  "BotBuilderCommunity.SocialMediaInput": {
+    "flow": {
+      "body": "=action.prompt",
+      "botAsks": {
+        "body": {
+          "defaultContent": "<prompt>",
+          "field": "prompt",
+          "widget": "LgWidget"
+        },
+        "header": {
+          "colors": {
+            "icon": "#5C2E91",
+            "theme": "#BBEAF4"
+          },
+          "icon": "MessageBot",
+          "widget": "ActionHeader"
+        },
+        "widget": "ActionCard"
+      },
+      "nowrap": true,
+      "userInput": {
+        "header": {
+          "colors": {
+            "icon": "#0078D4",
+            "theme": "#E5F0FF"
+          },
+          "disableSDKTitle": true,
+          "icon": "User",
+          "menu": "none",
+          "widget": "ActionHeader"
+        },
+        "widget": "ActionCard"
+      },
+      "widget": "PromptWidget"
+    },
+    "form": {
+      "helpLink": "https://aka.ms/bfc-understanding-dialogs",
+      "label": "Prompt for Social Media Type",
+      "order": [
+        "mediaType",
+        "resultProperty",
+        "defaultLocale",
+        "*"
+      ],
+      "properties": {
+        "resultProperty": {
+          "intellisenseScopes": [
+            "variable-scopes"
+          ]
+        }
+      },
+      "subtitle": "Social Media Type(Bot Builder Community)"
+    },
+    "menu": {
+      "label": "Social Media Type",
+      "submenu": [
+        "Ask a question"
+      ]
+    }
+  },
   "Microsoft.AdaptiveDialog": {
     "form": {
       "description": "This configures a data driven dialog via a collection of events and actions.",
@@ -144,21 +322,18 @@
         "singleline": true,
         "widget": "ResourceOperation"
       },
+      "colors": {
+        "color": "#FFFFFF",
+        "icon": "#FFFFFF",
+        "theme": "#004578"
+      },
       "footer": {
         "description": "= Result",
         "property": "=action.resultProperty",
         "widget": "PropertyDescription"
       },
-      "header": {
-        "colors": {
-          "color": "#FFFFFF",
-          "icon": "#FFFFFF",
-          "theme": "#004578"
-        },
-        "icon": "Library",
-        "widget": "ActionHeader"
-      },
       "hideFooter": "=!action.resultProperty",
+      "icon": "Library",
       "widget": "ActionCard"
     },
     "form": {
@@ -1593,6 +1768,23 @@
       "helpLink": "https://aka.ms/composer-telemetry",
       "label": "Emit a trace event",
       "subtitle": "Trace Activity"
+    }
+  },
+  "Microsoft.TwilioAdapter": {
+    "form": {
+      "description": "Connects a bot to Twilio.",
+      "helpLink": "https://github.com/microsoft/botbuilder-dotnet/tree/main/libraries/Adapters/Microsoft.Bot.Builder.Adapters.Twilio",
+      "hidden": [
+        "type"
+      ],
+      "label": "Twilio connection.",
+      "order": [
+        "TwilioNumber",
+        "TwilioAccountSid",
+        "TwilioAuthToken",
+        "TwilioValidationUrl",
+        "*"
+      ]
     }
   },
   "Microsoft.UpdateActivity": {

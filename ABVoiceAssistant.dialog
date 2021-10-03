@@ -204,6 +204,18 @@
           "property": "conversation.batchresult"
         },
         {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "2m31Wm"
+          },
+          "assignments": [
+            {
+              "value": "${substring(conversation.batchresult, 0, (length(conversation.batchresult)-1))}",
+              "property": "conversation.batchresult"
+            }
+          ]
+        },
+        {
           "$kind": "Microsoft.SendActivity",
           "$designer": {
             "id": "39wg8D"
